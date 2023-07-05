@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="script" href="script.js" />
   </head>
   <body>
     <div class="wrapper">
@@ -25,7 +26,30 @@
           ></textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <!--updated button id to reflect modal...to make it make sense-->
+          <button id="showModal" class="btn">Generate Password</button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+              <label for="quantity">Number of characters (Between 8-128):</label>
+              <input type="number" id="quantity" name="quantity" min="8" max="128"><br><br>
+              <input type="checkbox" id="lowercase" name="option1" value="abcdefghijklmnopqrstuvwxyz">
+              <label for="option1"> Lowercase Characters (abcdef)</label><br>
+              <input type="checkbox" id="uppercase" name="option2" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+              <label for="option2"> Uppercase Characters (ABCDEF)</label><br>
+              <input type="checkbox" id="numbers" name="option3" value="1234567890">
+              <label for="option3"> Numbers (123456)</label><br>
+              <input type="checkbox" id="special" name="option4" value="!@#$%&?">
+              <label for="option4"> Special Characters</label><br>
+            </p>
+            <button id="generate" class="btn">Generate Password</button>
+          </div>
+
         </div>
       </div>
     </div>

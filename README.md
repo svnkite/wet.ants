@@ -1,2 +1,1 @@
-what does it mean
-what does it all mean
+switched to modal bc prompts r ugly sry 
